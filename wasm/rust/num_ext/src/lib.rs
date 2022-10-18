@@ -16,3 +16,15 @@ pub fn greet(name: &str) {
 pub fn nth_prime(i: usize) -> usize {
   primal::StreamingSieve::nth_prime(i)
 }
+
+#[wasm_bindgen]
+pub fn nth_fibo(i: usize) -> u64 {
+  let mut prev: u64 = 0;
+  let mut curr: u64 = 1;
+  for _ in 1..i {
+      let next = prev + curr;
+      prev = curr;
+      curr = next;
+  }
+  curr
+}

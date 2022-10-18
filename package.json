@@ -9,8 +9,12 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.11.5",
+    "markdown-wasm": "^1.2.0",
     "nth-prime": "^1.0.4",
+    "ruby-head-wasm-wasi": "^0.3.0",
     "rust-num_ext": "file:wasm/rust/num_ext/pkg",
+    "vite-plugin-top-level-await": "^1.1.1",
     "vite-plugin-wasm": "^3.0.0",
     "vue": "^3.2.38"
   },
