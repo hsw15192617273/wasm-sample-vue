@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.11.5",
+    "bignumber": "^1.1.0",
+    "fibonacci": "^1.6.10",
     "markdown-wasm": "^1.2.0",
     "nth-prime": "^1.0.4",
     "ruby-head-wasm-wasi": "^0.3.0",

@@ -36,12 +36,12 @@ const calFibo = () => {
   calFiboRs()
 }
 
-const jsFibo = ref(0)
+const jsFibo = ref(0n)
 const jsFiboTimeRange = ref(0)
 const calFiboJS = () => {
   let startTime = performance.now()
 
-  let n1 = 0, n2 = 1, nextTerm;
+  let n1 = 0n, n2 = 1n, nextTerm;
   for (let i = 1; i < idxFibo.value; i++) {
     nextTerm = n1 + n2;
     n1 = n2;
@@ -52,7 +52,7 @@ const calFiboJS = () => {
   jsFiboTimeRange.value = performance.now() - startTime
 }
 
-const rsFibo = ref(0)
+const rsFibo = ref("0")
 const rsFiboTimeRange = ref(0)
 const calFiboRs = () => {
   let startTime = performance.now()
@@ -75,7 +75,7 @@ const calFiboRs = () => {
       <div style="display: flex; justify-content: space-around;">
         <div>
           <h2><button @click="calJS">Just Cal</button> By JS</h2>
-          <div>
+          <div class="num">
             Result: {{ jsPrime }}
           </div>
           <div>
@@ -84,7 +84,7 @@ const calFiboRs = () => {
         </div>
         <div>
           <h2><button @click="calRS">Just Cal</button> By Rust</h2>
-          <div>
+          <div class="num">
             Result: {{ rsPrime }}
           </div>
           <div>
@@ -106,7 +106,7 @@ const calFiboRs = () => {
       <div style="display: flex; justify-content: space-around">
         <div>
           <h2><button @click="calFiboJS">Just Cal</button> By JS</h2>
-          <div>
+          <div class="num">
             Result: {{ jsFibo }}
           </div>
           <div>
@@ -115,7 +115,7 @@ const calFiboRs = () => {
         </div>
         <div>
           <h2><button @click="calFiboRs">Just Cal</button> By Rust</h2>
-          <div>
+          <div class="num">
             Result: {{ rsFibo }}
           </div>
           <div>
@@ -129,3 +129,11 @@ const calFiboRs = () => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.num {
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+</style>
