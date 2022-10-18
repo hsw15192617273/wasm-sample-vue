@@ -575,6 +575,11 @@ is-date-object@^1.0.1:
   dependencies:
     has-tostringtag "^1.0.0"
 
+is-finite@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.npmmirror.com/is-finite/-/is-finite-1.1.0.tgz#904135c77fb42c0641d6aa1bcdbc4daa8da082f3"
+  integrity sha512-cdyMtqX/BOqqNBBiKlIVkytNHm49MtMlYyn1zxzvJKWmFMlGzm+ry5BBfYyeY9YmNKbRSo/o7OX9w9ale0wg3w==
+
 is-negative-zero@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmmirror.com/is-negative-zero/-/is-negative-zero-2.0.2.tgz#7bf6f03a28003b8b3965de3ac26f664d765f3150"
@@ -586,6 +591,13 @@ is-number-object@^1.0.4:
   integrity sha512-k1U0IRzLMo7ZlYIfzRu23Oh6MiIFasgpb9X76eqfFZAqwH44UI4KTBvBYIZ1dSL9ZzChTB9ShHfLkR4pdW5krQ==
   dependencies:
     has-tostringtag "^1.0.0"
+
+is-prime@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/is-prime/-/is-prime-1.0.1.tgz#b2d735b11910ef3d4175bf75de4e8835c4a8b1de"
+  integrity sha512-2jEq1bckTvaKN6DVbq+6C8ecqJevQWtUgGOoED26S8nUr2+efYvRKlaYnj3Vx4mEFyAaE9PYfkRlMBEzJMLKpg==
+  dependencies:
+    number-is-integer "*"
 
 is-regex@^1.1.4:
   version "1.1.4"
@@ -703,6 +715,20 @@ npm-run-all@^4.1.5:
     read-pkg "^3.0.0"
     shell-quote "^1.6.1"
     string.prototype.padend "^3.0.0"
+
+nth-prime@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/nth-prime/-/nth-prime-1.0.4.tgz#bda00a0ac6c678a87e90c9c330b36f3a88c67cad"
+  integrity sha512-WmQ5df+ZJ6GQauH4j7z6l8SyyXICAAstDQP5o1uX1SVZqVRgZoGrk9m3mZhLgQKymmeIzyMdiOU0rSz+91OfoQ==
+  dependencies:
+    is-prime "^1.0.1"
+
+number-is-integer@*:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/number-is-integer/-/number-is-integer-2.0.0.tgz#93958834ceae7aa0bb22c5cca910c10c8cdaaf85"
+  integrity sha512-sNqkyjlp8T5DHX51pnAWuF8OUQBSo4WzQ6D4Gemt+UtRf+ra3etdt/sE9vxQHoRLY573Gbb4oZsDTNp7tfUQjA==
+  dependencies:
+    is-finite "^1.0.1"
 
 object-inspect@^1.12.2, object-inspect@^1.9.0:
   version "1.12.2"

@@ -9,6 +9,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "nth-prime": "^1.0.4",
     "rust-num_ext": "file:wasm/rust/num_ext/pkg",
     "vite-plugin-wasm": "^3.0.0",
     "vue": "^3.2.38"

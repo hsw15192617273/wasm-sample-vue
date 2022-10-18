@@ -11,3 +11,8 @@ extern {
 pub fn greet(name: &str) {
   alert(&format!("Hello, {}!", name));
 }
+
+#[wasm_bindgen]
+pub fn nth_prime(i: usize) -> usize {
+  primal::StreamingSieve::nth_prime(i)
+}
