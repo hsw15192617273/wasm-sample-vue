@@ -12,7 +12,7 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet(name: &str) {
-  alert(&format!("Hello, {}!", name));
+  alert(&format!("Hello, {}! I'm come from Wasm!", name));
 }
 
 #[wasm_bindgen]

@@ -3,8 +3,24 @@ import { ref } from 'vue'
 import nthPrime from 'nth-prime'
 import { greet, nth_prime, nth_fibo } from 'rust-num_ext'
 
-// import { parse } from 'markdown-wasm'
-// console.log(parse("# hello\n*world*"))
+// import fs from "fs/promises";
+// import { DefaultRubyVM } from "ruby-head-wasm-wasi/dist/node.cjs.js";
+
+// const main = async () => {
+//   const response = await fetch('http://localhost:5173/node_modules/ruby-head-wasm-wasi/dist/ruby.wasm')
+//   console.log(response)
+//   const binary = await response.arrayBuffer()
+//   console.log(binary)
+//   const module = await WebAssembly.compile(binary)
+//   console.log(module)
+//   const { vm } = await DefaultRubyVM(module)
+
+//   vm.eval(`
+//     luckiness = ["Lucky", "Unlucky"].sample
+//     puts "You are #{luckiness}"
+//   `)
+// }
+// main()
 
 // greet('wasm and vue')
 
