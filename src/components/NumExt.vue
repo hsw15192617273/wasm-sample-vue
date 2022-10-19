@@ -107,9 +107,6 @@ const calFiboRs = () => {
             Time Range: {{ rsTimeRange }} ms
           </div>
         </div>
-        <div>
-          <h2>By Ruby</h2>
-        </div>
       </div>
     </div>
 
@@ -137,9 +134,6 @@ const calFiboRs = () => {
           <div>
             Time Range: {{ rsFiboTimeRange }} ms
           </div>
-        </div>
-        <div>
-          <h2>By Ruby</h2>
         </div>
       </div>
     </div>
