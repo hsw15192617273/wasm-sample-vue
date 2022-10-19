@@ -78,10 +78,17 @@ const calFiboRs = () => {
   rsFiboTimeRange.value = performance.now() - startTime
 }
 
+const hi = () => {
+  greet('Everyone')
+}
+
 </script>
 
 <template>
   <div class="num-ext">
+    <div>
+      <button @click="hi">Say Hi</button>
+    </div>
     <div>
       <h1>Prime Number</h1>
       <div>
