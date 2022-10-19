@@ -1001,9 +1001,6 @@ ruby-head-wasm-wasi@^0.3.0:
 "rust-num_ext@file:wasm/rust/num_ext/pkg":
   version "0.1.0"
 
-"rust-sample@file:wasm/rust/sample/pkg":
-  version "0.1.0"
-
 safe-regex-test@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmmirror.com/safe-regex-test/-/safe-regex-test-1.0.0.tgz#793b874d524eb3640d1873aad03596db2d4f2295"

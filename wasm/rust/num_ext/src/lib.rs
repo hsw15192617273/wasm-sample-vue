@@ -1,7 +1,7 @@
 extern crate wasm_bindgen;
 
 use wasm_bindgen::prelude::*;
-use num_bigint::BigUint;
+use num_bigint::BigInt;
 use num_traits::{Zero, One};
 use std::mem::replace;
 
@@ -22,8 +22,8 @@ pub fn nth_prime(i: usize) -> usize {
 
 #[wasm_bindgen]
 pub fn nth_fibo(i: usize) -> String {
-  let mut prev: BigUint = Zero::zero();
-  let mut curr: BigUint = One::one();
+  let mut prev: BigInt = Zero::zero();
+  let mut curr: BigInt = One::one();
   for _ in 1..i {
       let next = prev + &curr;
       prev = replace(&mut curr, next);

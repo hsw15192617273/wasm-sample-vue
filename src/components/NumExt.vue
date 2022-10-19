@@ -90,7 +90,7 @@ const calFiboRs = () => {
       </div>
       <div style="display: flex; justify-content: space-around;">
         <div>
-          <h2><button @click="calJS">Just Cal</button> By JS</h2>
+          <h2><button v-if="false" @click="calJS">Just Cal</button> By JS</h2>
           <div class="num">
             Result: {{ jsPrime }}
           </div>
@@ -99,7 +99,7 @@ const calFiboRs = () => {
           </div>
         </div>
         <div>
-          <h2><button @click="calRS">Just Cal</button> By Rust</h2>
+          <h2><button v-if="false" @click="calRS">Just Cal</button> By Rust</h2>
           <div class="num">
             Result: {{ rsPrime }}
           </div>
@@ -118,7 +118,7 @@ const calFiboRs = () => {
       </div>
       <div style="display: flex; justify-content: space-around">
         <div>
-          <h2><button @click="calFiboJS">Just Cal</button> By JS</h2>
+          <h2><button v-if="false" @click="calFiboJS">Just Cal</button> By JS</h2>
           <div class="num">
             Result: {{ jsFibo }}
           </div>
@@ -127,7 +127,7 @@ const calFiboRs = () => {
           </div>
         </div>
         <div>
-          <h2><button @click="calFiboRs">Just Cal</button> By Rust</h2>
+          <h2><button v-if="false" @click="calFiboRs">Just Cal</button> By Rust</h2>
           <div class="num">
             Result: {{ rsFibo }}
           </div>

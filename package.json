@@ -16,7 +16,6 @@
     "nth-prime": "^1.0.4",
     "ruby-head-wasm-wasi": "^0.3.0",
     "rust-num_ext": "file:wasm/rust/num_ext/pkg",
-    "rust-sample": "file:wasm/rust/sample/pkg",
     "vite-plugin-top-level-await": "^1.1.1",
     "vite-plugin-wasm": "^3.0.0",
     "vue": "^3.2.38"
