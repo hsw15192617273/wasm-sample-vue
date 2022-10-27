@@ -1,0 +1,10 @@
+<html>
+  <script src="https://cdn.jsdelivr.net/npm/ruby-head-wasm-wasi@0.3.0-2022-09-06-f/dist/browser.script.iife.js"></script>
+  <script type="text/ruby">
+    puts "Hello, world!"
+
+    require "js"
+    JS::eval("document.body.innerText = '#{Time.now}'")
+    JS::eval("alert('#{ 4.times.map { |n| "Happy Birthday #{n==2 ? "dear Tony" : "to You"}" }.join('\\n') }')")
+  </script>
+</html>

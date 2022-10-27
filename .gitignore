@@ -28,4 +28,5 @@ coverage
 *.sw?
 
 wasm/*/**/target
+wasm/*/**/pkg
 wasm/ruby/test

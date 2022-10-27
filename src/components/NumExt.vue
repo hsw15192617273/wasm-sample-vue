@@ -3,27 +3,6 @@ import { ref } from 'vue'
 import nthPrime from 'nth-prime'
 import { greet, nth_prime, nth_fibo } from 'rust-num_ext'
 
-// import fs from "fs/promises";
-// import { DefaultRubyVM } from "ruby-head-wasm-wasi/dist/node.cjs.js";
-
-// const main = async () => {
-//   const response = await fetch('http://localhost:5173/node_modules/ruby-head-wasm-wasi/dist/ruby.wasm')
-//   console.log(response)
-//   const binary = await response.arrayBuffer()
-//   console.log(binary)
-//   const module = await WebAssembly.compile(binary)
-//   console.log(module)
-//   const { vm } = await DefaultRubyVM(module)
-
-//   vm.eval(`
-//     luckiness = ["Lucky", "Unlucky"].sample
-//     puts "You are #{luckiness}"
-//   `)
-// }
-// main()
-
-// greet('wasm and vue')
-
 const idx = ref(0)
 const cal = () => {
   calJS()
@@ -86,10 +65,10 @@ const hi = () => {
 
 <template>
   <div class="num-ext">
-    <div>
+    <div class="panel">
       <button @click="hi">Say Hi</button>
     </div>
-    <div>
+    <div class="panel">
       <h1>Prime Number</h1>
       <div>
         Index: <input v-model="idx" />
@@ -117,7 +96,7 @@ const hi = () => {
       </div>
     </div>
 
-    <div style="margin-top: 20px">
+    <div class="panel">
       <h1>Fibonacci</h1>
       <div>
         Index: <input v-model="idxFibo" />
@@ -144,6 +123,10 @@ const hi = () => {
         </div>
       </div>
     </div>
+
+    <div class="panel">
+      <a href="ruby.html">to ruby sandbox</a>
+    </div>
   </div>
 </template>
 
@@ -152,5 +135,8 @@ const hi = () => {
   width: 350px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.panel {
+  margin-top: 20px
 }
 </style>
