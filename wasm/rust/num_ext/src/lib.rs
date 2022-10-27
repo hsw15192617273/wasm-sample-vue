@@ -1,7 +1,4 @@
-#![feature(test)]
-
 extern crate wasm_bindgen;
-extern crate test;
 
 use wasm_bindgen::prelude::*;
 use num_bigint::BigInt;
@@ -27,21 +24,11 @@ pub fn nth_prime(i: usize) -> usize {
 pub fn nth_fibo(i: usize) -> String {
   let mut prev: BigInt = Zero::zero();
   let mut curr: BigInt = One::one();
+  let mut next: BigInt;
+
   for _ in 1..i {
-      let next = prev + &curr;
+      next = prev + &curr;
       prev = replace(&mut curr, next);
   }
   curr.to_string()
-}
-
-#[cfg(test)]
-mod tests {
-  use super::*;
-  use test::Bencher;
-
-  #[bench]
-  fn bench_nth_fibo(b: &mut Bencher) {
-    // b.iter(|| test::black_box(nth_fibo(1000000)));
-    b.iter(|| nth_fibo(100000));
-  }
 }
